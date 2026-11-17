@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Klar Support</title>
+  <meta name="description" content="Help, setup guide, troubleshooting and contact for Klar, the Mac app that cleans your microphone and clarifies the audio you hear.">
+  <link rel="icon" href="icon.png">
+  <link rel="alternate" hreflang="tr" href="tr/">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <div class="inner">
+    <a class="brand" href="./"><img src="icon.png" alt="">Klar</a>
+    <a href="./" aria-current="page">Support</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="tr/" hreflang="tr" lang="tr">Türkçe</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <header class="hero">
+    <img src="icon.png" alt="Klar app icon">
+    <h1>Klar Support</h1>
+    <p>Klar cleans your microphone and clarifies the audio you hear, so calls stay clear in a noisy room.</p>
+    <p style="margin-top:20px">
+      <a class="button" href="https://github.com/emrecanayar/klar-support/issues/new/choose">Contact support</a>
+      <a class="button secondary" href="privacy.html">Privacy Policy</a>
+    </p>
+  </header>
+
+  <div class="card">
+    <strong>On this page:</strong>
+    <a href="#requirements">Requirements</a> ·
+    <a href="#start">Getting started</a> ·
+    <a href="#permissions">Permissions</a> ·
+    <a href="#calls">Using Klar in calls</a> ·
+    <a href="#listening">Listening</a> ·
+    <a href="#presets">Presets</a> ·
+    <a href="#automation">Automation &amp; shortcuts</a> ·
+    <a href="#testroom">Test room</a> ·
+    <a href="#troubleshooting">Troubleshooting</a> ·
+    <a href="#reset">Reset &amp; uninstall</a> ·
+    <a href="#contact">Contact</a>
+  </div>
+
+  <h2 id="requirements">Requirements</h2>
+  <div class="card">
+    <ul>
+      <li>A Mac running <strong>macOS 15 Sequoia</strong> or later (Apple silicon or Intel).</li>
+      <li>A microphone (built-in, USB or Bluetooth headset).</li>
+      <li>Optional: a virtual audio device such as <a href="https://existential.audio/blackhole/">BlackHole</a>, so other apps can pick up Klar’s cleaned microphone.</li>
+    </ul>
+    <p class="muted">Klar works fully offline. It does not need an internet connection or an account.</p>
+  </div>
+
+  <h2 id="start">Getting started</h2>
+  <div class="card">
+    <ol>
+      <li>Open Klar. The welcome screen walks you through the first setup.</li>
+      <li>Allow <strong>Microphone</strong> and <strong>System Audio Recording</strong> access when macOS asks (see <a href="#permissions">Permissions</a>).</li>
+      <li>Under <strong>Audio chains</strong>, open a chain and click <strong>Start</strong>. Klar has two chains:
+        <ul>
+          <li><strong>Your voice</strong> — cleans your microphone; the other person hears this audio.</li>
+          <li><strong>The other side</strong> — clarifies incoming audio and evens out its level.</li>
+        </ul>
+      </li>
+      <li>Not sure which preset fits? Click <strong>Set up this room</strong>: Klar listens to the room for a moment and suggests one. Use <strong>Compare</strong> to briefly hear the raw audio.</li>
+      <li>Klar keeps running when you close the window. Use the waveform icon in the menu bar to stop it or open it again.</li>
+    </ol>
+  </div>
+
+  <h2 id="permissions">Permissions</h2>
+  <div class="card">
+    <div class="table-scroll">
+      <table>
+        <tr><th>Permission</th><th>Why Klar asks</th><th>Where to change it</th></tr>
+        <tr><td>Microphone</td><td>To process your voice in real time so it stays clear on calls.</td><td>System Settings → Privacy &amp; Security → Microphone</td></tr>
+        <tr><td>System Audio Recording</td><td>To clarify the audio other apps play (the person you are listening to) and to use it as the echo-cancellation reference.</td><td>System Settings → Privacy &amp; Security → Screen &amp; System Audio Recording</td></tr>
+        <tr><td>Login Items (optional)</td><td>Only if you turn on <em>Open at login</em>.</td><td>System Settings → General → Login Items</td></tr>
+      </table>
+    </div>
+    <p class="muted">Audio is processed in memory on your Mac and is never recorded to disk, unless you explicitly export a clip from the Test room. See the <a href="privacy.html">Privacy Policy</a>.</p>
+  </div>
+
+  <h2 id="calls">Using Klar in calls (Zoom, Meet, Teams, Discord, Slack, FaceTime)</h2>
+  <div class="card">
+    <ol>
+      <li>Install a virtual audio device such as <strong>BlackHole 2ch</strong>. Call apps can only pick up Klar through a virtual device.</li>
+      <li>In <strong>Your voice</strong> → <strong>Devices</strong>, choose your real microphone as <strong>Microphone</strong> and BlackHole 2ch as <strong>Output</strong> (it is marked “virtual”). Click <strong>Start</strong>.</li>
+      <li>In Zoom, Meet, Teams, Discord or Slack, choose <strong>BlackHole 2ch</strong> as the microphone.</li>
+      <li>Without a virtual device, the other person keeps hearing your Mac’s own microphone; Klar can still clarify the audio you hear, which needs no driver.</li>
+      <li>Mute and push-to-talk reach the call only when the call app uses Klar’s virtual output as its microphone.</li>
+    </ol>
+  </div>
+
+  <h2 id="listening">Listening (The other side)</h2>
+  <div class="card">
+    <p>While listening is on, the sound of other apps passes through Klar and the original is turned down, so you hear only the clarified version. When you turn it off, system audio goes back to normal.</p>
+    <p>With <strong>Listen to</strong> you choose what passes through the chain: every app (music and notifications included), only the call app that is using the microphone, or one specific call app. Choose where Klar plays under <strong>Speaker / headphones</strong>.</p>
+  </div>
+
+  <h2 id="presets">Presets and the effect chain</h2>
+  <div class="card">
+    <p>Built-in presets: Call, Meeting, Podcast, Radio voice, Stream &amp; game, Noisy place, Movies &amp; TV, Laptop speakers, Vivid, Music and Flat. You can save your own presets too.</p>
+    <p>Each chain is built from effects you can turn on, reorder and fine-tune, including echo cancellation, noise reduction, noise floor, de-reverb, de-click, rumble filter, gate, expander, equalizer, bass, de-esser, pitch, compressor, auto gain, reverb, maximizer, limiter and de-clip.</p>
+    <p>Advanced: in Noise reduction you can import your own RNNoise model file. Klar copies it into its own folder on your Mac.</p>
+  </div>
+
+  <h2 id="automation">Automation, shortcuts and Siri</h2>
+  <div class="card">
+    <ul>
+      <li><strong>Start with calls:</strong> Klar can turn itself on when a call app you pick (Zoom, browser/Meet, Teams, FaceTime, Discord, Slack) starts using the microphone, and turn off when the call ends. Klar only checks which app is using the microphone; it does not read the call.</li>
+      <li><strong>App presets:</strong> switch presets automatically depending on the app in use.</li>
+      <li><strong>Keyboard shortcuts:</strong> set global shortcuts for mute and push-to-talk. Klar warns you if a shortcut is already used by macOS.</li>
+      <li><strong>Siri, Spotlight and Shortcuts:</strong> say or run “Start Klar”, “Stop Klar”, “Mute Klar” or “Switch Klar to &lt;preset&gt;”.</li>
+      <li><strong>Focus filter:</strong> attach a Klar preset to a Focus mode in System Settings → Focus.</li>
+      <li><strong>Open at login:</strong> turn on in Klar’s settings.</li>
+    </ul>
+  </div>
+
+  <h2 id="testroom">Test room</h2>
+  <div class="card">
+    <p>The Test room lets you hear the effect chain before a call. Play built-in noise scenes (café, construction, dog, fan, keyboard) mixed with speech, or record a short sample of your own voice, and compare before/after.</p>
+    <p>Your sample stays in memory. If you choose <strong>Save before and after</strong>, Klar writes two short WAV files (original and processed) only to the folder you pick.</p>
+  </div>
+
+  <h2 id="troubleshooting">Troubleshooting</h2>
+  <div class="card">
+    <details>
+      <summary>The other person still hears background noise.</summary>
+      <p>If Klar shows “Not reaching calls”, follow <a href="#calls">Using Klar in calls</a>. Make sure your call app’s microphone is set to the device Klar outputs to (a virtual device such as BlackHole). If the call app uses your Mac’s built-in microphone directly, Klar cannot clean it. Also turn off the call app’s own noise suppression if it makes your voice sound choppy.</p>
+    </details>
+    <details>
+      <summary>Klar does not hear my microphone / the level meter stays flat.</summary>
+      <p>Open System Settings → Privacy &amp; Security → Microphone and make sure Klar is on. Then check that the right input device is selected in Klar. Quit and reopen Klar after changing the permission.</p>
+    </details>
+    <details>
+      <summary>Listening does nothing, or I hear the audio twice.</summary>
+      <p>Allow Klar under System Settings → Privacy &amp; Security → Screen &amp; System Audio Recording, then restart listening. If you hear audio twice, check that Klar’s output and the app’s output are not routed to two different devices.</p>
+    </details>
+    <details>
+      <summary>There is an echo on calls.</summary>
+      <p>Use headphones if you can. Otherwise keep Echo cancellation on in Your voice and allow System Audio Recording so Klar knows what your speakers are playing.</p>
+    </details>
+    <details>
+      <summary>My voice sounds robotic or cut off.</summary>
+      <p>Lower the Noise reduction strength or the Gate threshold, or try the Meeting or Flat preset. Very strong settings can remove quiet parts of speech.</p>
+    </details>
+    <details>
+      <summary>A keyboard shortcut does not work.</summary>
+      <p>The shortcut may already be used by macOS or another app. Choose a different combination in Klar’s settings.</p>
+    </details>
+    <details>
+      <summary>Klar uses too much CPU.</summary>
+      <p>Turn off effects you do not need, especially heavy ones such as De-reverb or neural noise reduction on both chains at the same time.</p>
+    </details>
+  </div>
+
+  <h2 id="reset">Reset and uninstall</h2>
+  <div class="card">
+    <ol>
+      <li>Quit Klar from the menu bar icon.</li>
+      <li>Drag <strong>Klar</strong> from the Applications folder to the Trash.</li>
+      <li>Optional, to remove settings and imported models, run in Terminal:
+        <p><code>defaults delete com.klar.voice</code></p>
+        <p><code>rm -rf ~/Library/Application\ Support/Klar</code></p>
+      </li>
+      <li>Optional: remove Klar from System Settings → Privacy &amp; Security (Microphone and Screen &amp; System Audio Recording) and from Login Items.</li>
+    </ol>
+  </div>
+
+  <h2 id="contact">Contact</h2>
+  <div class="card">
+    <p>Have a question, found a bug or want to suggest a feature? Open a request on GitHub. We read every message and usually reply within a few business days.</p>
+    <p><a class="button" href="https://github.com/emrecanayar/klar-support/issues/new/choose">Open a support request</a></p>
+    <p class="muted">Please include your macOS version, Klar version, your microphone/headphones and the call app you use. Do not post personal information or audio recordings you do not want to be public — GitHub issues are visible to everyone.</p>
+  </div>
+
+  <footer>
+    <p>© 2026 Emre Can Ayar · <a href="privacy.html">Privacy Policy</a> · <a href="tr/">Türkçe</a></p>
+    <p>Apple, Mac, macOS, Siri and FaceTime are trademarks of Apple Inc. Other product names belong to their respective owners.</p>
+  </footer>
+</div>
+</body>
+</html>

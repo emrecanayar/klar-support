@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Klar Support / Destek
+    url: https://emrecanayar.github.io/klar-support/
+    about: Setup guide and troubleshooting. / Kurulum rehberi ve sorun giderme.
+  - name: Privacy Policy / Gizlilik Politikası
+    url: https://emrecanayar.github.io/klar-support/privacy.html
+    about: How Klar handles your data. / Klar verilerini nasıl ele alır.

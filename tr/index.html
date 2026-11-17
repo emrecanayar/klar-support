@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Klar Destek</title>
+  <meta name="description" content="Mikrofonunu temizleyen ve duyduğun sesi netleştiren Mac uygulaması Klar için yardım, kurulum rehberi, sorun giderme ve iletişim.">
+  <link rel="icon" href="../icon.png">
+  <link rel="alternate" hreflang="en" href="../">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav>
+  <div class="inner">
+    <a class="brand" href="./"><img src="../icon.png" alt="">Klar</a>
+    <a href="./" aria-current="page">Destek</a>
+    <a href="privacy.html">Gizlilik</a>
+    <a href="../" hreflang="en" lang="en">English</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <header class="hero">
+    <img src="../icon.png" alt="Klar uygulama simgesi">
+    <h1>Klar Destek</h1>
+    <p>Klar mikrofonunu temizler ve duyduğun sesi netleştirir; gürültülü bir ortamda bile aramaların net kalır.</p>
+    <p style="margin-top:20px">
+      <a class="button" href="https://github.com/emrecanayar/klar-support/issues/new/choose">Destek iste</a>
+      <a class="button secondary" href="privacy.html">Gizlilik Politikası</a>
+    </p>
+  </header>
+
+  <div class="card">
+    <strong>Bu sayfada:</strong>
+    <a href="#gereksinimler">Gereksinimler</a> ·
+    <a href="#baslarken">Başlarken</a> ·
+    <a href="#izinler">İzinler</a> ·
+    <a href="#aramalar">Aramada kullanım</a> ·
+    <a href="#dinleme">Dinleme</a> ·
+    <a href="#ayarlar">Hazır ayarlar</a> ·
+    <a href="#otomasyon">Otomasyon ve kısayollar</a> ·
+    <a href="#deneme">Deneme odası</a> ·
+    <a href="#sorunlar">Sorun giderme</a> ·
+    <a href="#kaldirma">Sıfırlama ve kaldırma</a> ·
+    <a href="#iletisim">İletişim</a>
+  </div>
+
+  <h2 id="gereksinimler">Gereksinimler</h2>
+  <div class="card">
+    <ul>
+      <li><strong>macOS 15 Sequoia</strong> veya daha yenisi yüklü bir Mac (Apple silikon veya Intel).</li>
+      <li>Bir mikrofon (dahili, USB ya da Bluetooth kulaklık).</li>
+      <li>İsteğe bağlı: diğer uygulamaların Klar’ın temizlenmiş mikrofonunu alabilmesi için <a href="https://existential.audio/blackhole/">BlackHole</a> gibi sanal bir ses aygıtı.</li>
+    </ul>
+    <p class="muted">Klar tamamen çevrimdışı çalışır. İnternet bağlantısı veya hesap gerekmez.</p>
+  </div>
+
+  <h2 id="baslarken">Başlarken</h2>
+  <div class="card">
+    <ol>
+      <li>Klar’ı aç. Hoş geldin ekranı ilk kurulumda sana yol gösterir.</li>
+      <li>macOS sorduğunda <strong>Mikrofon</strong> ve <strong>Sistem Ses Kaydı</strong> erişimine izin ver (bkz. <a href="#izinler">İzinler</a>).</li>
+      <li><strong>Ses zincirleri</strong> altında bir zinciri açıp <strong>Başlat</strong>’a tıkla. Klar’da iki zincir vardır:
+        <ul>
+          <li><strong>Senin sesin</strong> — mikrofonunu temizler; karşı taraf bu sesi duyar.</li>
+          <li><strong>Karşı taraf</strong> — gelen sesi netleştirir ve seviyesini dengeler.</li>
+        </ul>
+      </li>
+      <li>Hangi hazır ayarın uyduğundan emin değil misin? <strong>Bu odayı ayarla</strong>’ya tıkla: Klar odayı kısa bir süre dinler ve bir ayar önerir. Ham sesi kısa süre duymak için <strong>Karşılaştır</strong>’ı kullan.</li>
+      <li>Pencereyi kapatınca Klar çalışmaya devam eder. Durdurmak ya da yeniden açmak için menü çubuğundaki dalga simgesini kullan.</li>
+    </ol>
+  </div>
+
+  <h2 id="izinler">İzinler</h2>
+  <div class="card">
+    <div class="table-scroll">
+      <table>
+        <tr><th>İzin</th><th>Klar neden ister</th><th>Nereden değiştirilir</th></tr>
+        <tr><td>Mikrofon</td><td>Sesini gerçek zamanlı işleyip aramalarda net tutmak için.</td><td>Sistem Ayarları → Gizlilik ve Güvenlik → Mikrofon</td></tr>
+        <tr><td>Sistem Ses Kaydı</td><td>Diğer uygulamaların çaldığı sesi (dinlediğin kişiyi) netleştirmek ve yankı engelleme için referans olarak kullanmak için.</td><td>Sistem Ayarları → Gizlilik ve Güvenlik → Ekran ve Sistem Sesi Kaydı</td></tr>
+        <tr><td>Giriş Öğeleri (isteğe bağlı)</td><td>Yalnızca <em>Girişte aç</em> seçeneğini açarsan.</td><td>Sistem Ayarları → Genel → Giriş Öğeleri</td></tr>
+      </table>
+    </div>
+    <p class="muted">Ses, Mac’inde bellekte işlenir ve Deneme odasından açıkça dışa aktarmadığın sürece diske hiç kaydedilmez. Ayrıntılar için <a href="privacy.html">Gizlilik Politikası</a>’na bak.</p>
+  </div>
+
+  <h2 id="aramalar">Aramada kullanım (Zoom, Meet, Teams, Discord, Slack, FaceTime)</h2>
+  <div class="card">
+    <ol>
+      <li><strong>BlackHole 2ch</strong> gibi sanal bir ses aygıtı kur. Arama uygulamaları Klar’ı yalnızca sanal bir aygıt üzerinden duyabilir.</li>
+      <li><strong>Senin sesin</strong> → <strong>Aygıtlar</strong> bölümünde gerçek mikrofonunu <strong>Mikrofon</strong>, BlackHole 2ch’yi <strong>Çıkış</strong> olarak seç (listede “sanal” yazar). <strong>Başlat</strong>’a tıkla.</li>
+      <li>Zoom, Meet, Teams, Discord veya Slack’te mikrofon olarak <strong>BlackHole 2ch</strong>’yi seç.</li>
+      <li>Sanal aygıt yoksa karşı taraf Mac’inin kendi mikrofonunu duymaya devam eder; Klar yine de duyduğun sesi netleştirebilir, bunun için sürücü gerekmez.</li>
+      <li>Sessize alma ve bas-konuş, yalnızca arama uygulaması Klar’ın sanal çıkışını mikrofon olarak kullandığında aramaya ulaşır.</li>
+    </ol>
+  </div>
+
+  <h2 id="dinleme">Dinleme (Karşı taraf)</h2>
+  <div class="card">
+    <p>Dinleme açıkken diğer uygulamaların sesi Klar’dan geçer ve orijinali kısılır; böylece yalnızca netleştirilmiş hâlini duyarsın. Kapatınca sistem sesi eski hâline döner.</p>
+    <p><strong>Dinlenecek ses</strong> seçeneğiyle zincirden neyin geçeceğini seçersin: tüm uygulamalar (müzik ve bildirimler dâhil), yalnızca mikrofonu kullanan arama uygulaması ya da belirli bir arama uygulaması. Klar’ın nereden çalacağını <strong>Hoparlör / kulaklık</strong> altında seç.</p>
+  </div>
+
+  <h2 id="ayarlar">Hazır ayarlar ve efekt zinciri</h2>
+  <div class="card">
+    <p>Yerleşik hazır ayarlar: Arama, Toplantı, Podcast, Radyo sesi, Yayın ve oyun, Kalabalık ortam, Film ve dizi, Dizüstü hoparlörü, Canlı, Müzik ve Düz. Kendi ayarlarını da kaydedebilirsin.</p>
+    <p>Her zincir açıp kapatabildiğin, sıralayabildiğin ve ince ayar yapabildiğin efektlerden oluşur: yankı giderme, gürültü azaltma, dip ses, oda yankısı, klik temizleme, uğultu, kapı, genişletici, ekolayzer, bas, tıslama, perde, kompresör, otomatik kazanç, reverb, maksimizer, limitleyici ve kırpılma onarımı.</p>
+    <p>İleri düzey: Gürültü azaltma bölümünden kendi RNNoise model dosyanı içe aktarabilirsin. Klar dosyayı Mac’inde kendi klasörüne kopyalar.</p>
+  </div>
+
+  <h2 id="otomasyon">Otomasyon, kısayollar ve Siri</h2>
+  <div class="card">
+    <ul>
+      <li><strong>Aramayla birlikte başlat:</strong> Seçtiğin bir arama uygulaması (Zoom, tarayıcı/Meet, Teams, FaceTime, Discord, Slack) mikrofonu kullanmaya başlayınca Klar açılır, arama bitince kapanır. Klar yalnızca mikrofonu hangi uygulamanın kullandığına bakar; aramanın içeriğini okumaz.</li>
+      <li><strong>Uygulamaya göre ayar:</strong> kullanılan uygulamaya göre hazır ayarı otomatik değiştirir.</li>
+      <li><strong>Klavye kısayolları:</strong> sessize alma ve bas-konuş için genel kısayollar tanımla. Kısayol macOS tarafından kullanılıyorsa Klar seni uyarır.</li>
+      <li><strong>Siri, Spotlight ve Kestirmeler:</strong> “Klar’ı başlat”, “Klar’ı durdur”, “Klar’ı sessize al” veya “Klar’ı &lt;ayar&gt; ayarına geçir” de ya da çalıştır.</li>
+      <li><strong>Odak filtresi:</strong> Sistem Ayarları → Odak bölümünden bir Odak moduna Klar hazır ayarı bağla.</li>
+      <li><strong>Girişte aç:</strong> Klar’ın ayarlarından aç.</li>
+    </ul>
+  </div>
+
+  <h2 id="deneme">Deneme odası</h2>
+  <div class="card">
+    <p>Deneme odası, efekt zincirini aramadan önce duymanı sağlar. Konuşmayla karıştırılmış yerleşik gürültü sahnelerini (kafe, inşaat, köpek, fan, klavye) çal ya da kendi sesinden kısa bir örnek kaydet ve önce/sonra karşılaştır.</p>
+    <p>Örneğin yalnızca bellekte kalır. <strong>Önce ve sonrayı kaydet</strong>’i seçersen Klar iki kısa WAV dosyasını (orijinal ve işlenmiş) yalnızca seçtiğin klasöre yazar.</p>
+  </div>
+
+  <h2 id="sorunlar">Sorun giderme</h2>
+  <div class="card">
+    <details>
+      <summary>Karşı taraf hâlâ arka plan gürültüsünü duyuyor.</summary>
+      <p>Klar “Aramaya gitmiyor” diyorsa <a href="#aramalar">Aramada kullanım</a> adımlarını izle. Arama uygulamasının mikrofonunun Klar’ın çıkış verdiği aygıta (BlackHole gibi sanal bir aygıt) ayarlı olduğundan emin ol. Arama uygulaması doğrudan Mac’in dahili mikrofonunu kullanıyorsa Klar onu temizleyemez. Sesin kesik kesik geliyorsa arama uygulamasının kendi gürültü bastırmasını kapat.</p>
+    </details>
+    <details>
+      <summary>Klar mikrofonumu duymuyor / seviye göstergesi hareket etmiyor.</summary>
+      <p>Sistem Ayarları → Gizlilik ve Güvenlik → Mikrofon’u aç ve Klar’ın açık olduğundan emin ol. Sonra Klar’da doğru giriş aygıtının seçili olduğunu kontrol et. İzni değiştirdikten sonra Klar’dan çıkıp yeniden aç.</p>
+    </details>
+    <details>
+      <summary>Dinleme bir şey yapmıyor ya da sesi iki kez duyuyorum.</summary>
+      <p>Sistem Ayarları → Gizlilik ve Güvenlik → Ekran ve Sistem Sesi Kaydı’ndan Klar’a izin ver, sonra dinlemeyi yeniden başlat. Sesi iki kez duyuyorsan Klar’ın çıkışıyla uygulamanın çıkışının iki farklı aygıta gitmediğini kontrol et.</p>
+    </details>
+    <details>
+      <summary>Aramalarda yankı var.</summary>
+      <p>Mümkünse kulaklık kullan. Kullanamıyorsan Senin sesin zincirinde Yankı gidermeyi açık tut ve Klar’ın hoparlörlerin ne çaldığını bilmesi için Sistem Ses Kaydı’na izin ver.</p>
+    </details>
+    <details>
+      <summary>Sesim robotik ya da kesik geliyor.</summary>
+      <p>Gürültü azaltma gücünü veya Kapı eşiğini düşür ya da Toplantı veya Düz ayarını dene. Çok güçlü ayarlar konuşmanın sessiz kısımlarını silebilir.</p>
+    </details>
+    <details>
+      <summary>Bir klavye kısayolu çalışmıyor.</summary>
+      <p>Kısayol macOS ya da başka bir uygulama tarafından kullanılıyor olabilir. Klar’ın ayarlarından farklı bir tuş bileşimi seç.</p>
+    </details>
+    <details>
+      <summary>Klar çok fazla işlemci kullanıyor.</summary>
+      <p>İhtiyacın olmayan efektleri kapat; özellikle Oda yankısı veya yapay zekâ tabanlı gürültü azaltma gibi ağır efektleri iki zincirde aynı anda çalıştırma.</p>
+    </details>
+  </div>
+
+  <h2 id="kaldirma">Sıfırlama ve kaldırma</h2>
+  <div class="card">
+    <ol>
+      <li>Menü çubuğu simgesinden Klar’dan çık.</li>
+      <li><strong>Klar</strong>’ı Uygulamalar klasöründen Çöp Sepeti’ne sürükle.</li>
+      <li>İsteğe bağlı, ayarları ve içe aktarılan modelleri silmek için Terminal’de çalıştır:
+        <p><code>defaults delete com.klar.voice</code></p>
+        <p><code>rm -rf ~/Library/Application\ Support/Klar</code></p>
+      </li>
+      <li>İsteğe bağlı: Klar’ı Sistem Ayarları → Gizlilik ve Güvenlik (Mikrofon ile Ekran ve Sistem Sesi Kaydı) ve Giriş Öğeleri’nden kaldır.</li>
+    </ol>
+  </div>
+
+  <h2 id="iletisim">İletişim</h2>
+  <div class="card">
+    <p>Sorun mu var, hata mı buldun ya da bir özellik mi önermek istiyorsun? GitHub’da bir talep aç. Tüm mesajları okuyoruz ve genellikle birkaç iş günü içinde yanıtlıyoruz.</p>
+    <p><a class="button" href="https://github.com/emrecanayar/klar-support/issues/new/choose">Destek talebi aç</a></p>
+    <p class="muted">Lütfen macOS sürümünü, Klar sürümünü, mikrofon/kulaklığını ve kullandığın arama uygulamasını yaz. GitHub talepleri herkese açıktır; herkesin görmesini istemediğin kişisel bilgileri veya ses kayıtlarını paylaşma.</p>
+  </div>
+
+  <footer>
+    <p>© 2026 Emre Can Ayar · <a href="privacy.html">Gizlilik Politikası</a> · <a href="../">English</a></p>
+    <p>Apple, Mac, macOS, Siri ve FaceTime, Apple Inc.’in ticari markalarıdır. Diğer ürün adları sahiplerine aittir.</p>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+name: Feature request / Özellik önerisi
+description: Suggest an idea for Klar. / Klar için bir fikir öner.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea / Fikrin
+      description: What would you like Klar to do, and why? / Klar'ın ne yapmasını istersin ve neden?
+    validations:
+      required: true
