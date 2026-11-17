@@ -1,5 +1,8 @@
 blank_issues_enabled: false
 contact_links:
+  - name: Email support / E-posta ile destek
+    url: mailto:emrecan.ayar@icloud.com
+    about: Private support by email. / E-posta ile gizli destek.
   - name: Klar Support / Destek
     url: https://emrecanayar.github.io/klar-support/
     about: Setup guide and troubleshooting. / Kurulum rehberi ve sorun giderme.
