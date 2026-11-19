@@ -23,7 +23,7 @@
   <header class="hero">
     <h1>Privacy Policy</h1>
     <p>Klar processes your audio on your Mac. Nothing is sent to us or to anyone else.</p>
-    <p class="updated">Effective date: November 17, 2026</p>
+    <p class="updated">Effective date: November 19, 2026</p>
   </header>
 
   <div class="card">
@@ -56,12 +56,12 @@
     <p>In the Test room you can record a short sample of your voice to compare settings. The sample is kept in memory only and is gone when you record a new one or quit Klar. Only if you choose <em>Save before and after</em> does Klar write two WAV files, to the folder you select. Those files are yours; Klar does not read or send them anywhere. The same applies to any image you save from Klar: it goes only where you choose.</p>
 
     <h3>Files you import</h3>
-    <p>If you import a custom noise-reduction model, Klar copies that file into <code>~/Library/Application Support/Klar</code> on your Mac so it can use it later.</p>
+    <p>If you import a custom noise-reduction model, Klar copies that file into its own sandbox container (<code>~/Library/Containers/com.klar.voice</code>) on your Mac so it can use it later.</p>
   </div>
 
   <h2>3. Information stored on your Mac</h2>
   <div class="card">
-    <p>To remember your choices, Klar stores the following locally in its preferences (<code>com.klar.voice</code>) on your Mac:</p>
+    <p>To remember your choices, Klar stores the following locally in its preferences, inside its sandbox container (<code>~/Library/Containers/com.klar.voice</code>) on your Mac:</p>
     <ul>
       <li>Effect settings, built-in and saved presets, and per-app preset rules.</li>
       <li>Selected input and output devices, keyboard shortcuts, interface language and similar options.</li>
@@ -106,9 +106,8 @@
   <h2>7. Data retention and deletion</h2>
   <div class="card">
     <p>Audio is never retained. Settings stay on your Mac until you delete them. To remove everything Klar stored, quit Klar and run in Terminal:</p>
-    <p><code>defaults delete com.klar.voice</code></p>
-    <p><code>rm -rf ~/Library/Application\ Support/Klar</code></p>
-    <p>Deleting the app and these files removes all Klar data. Because we hold no data about you, there is nothing for us to export or delete on our side; you can still contact us with any request. If you email us, we use your message and address only to reply, and delete the conversation when it is resolved, unless you ask us to keep it.</p>
+    <p><code>rm -rf ~/Library/Containers/com.klar.voice</code></p>
+    <p>macOS may ask whether Terminal can access data from other apps; allow it for this command. Deleting the app and this folder removes all Klar data. Because we hold no data about you, there is nothing for us to export or delete on our side; you can still contact us with any request. If you email us, we use your message and address only to reply, and delete the conversation when it is resolved, unless you ask us to keep it.</p>
   </div>
 
   <h2>8. Children</h2>
@@ -123,7 +122,7 @@
 
   <h2>10. Security</h2>
   <div class="card">
-    <p>Klar is signed and notarized by Apple and runs with the hardened runtime. Because audio never leaves your device, there is no transmission or server storage to protect.</p>
+    <p>Klar is code-signed and runs in the macOS App Sandbox, which limits it to the microphone, the system audio you allow and the files you choose. Because audio never leaves your device, there is no transmission or server storage to protect.</p>
   </div>
 
   <h2>11. Changes to this policy</h2>

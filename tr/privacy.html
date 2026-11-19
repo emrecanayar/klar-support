@@ -23,7 +23,7 @@
   <header class="hero">
     <h1>Gizlilik Politikası</h1>
     <p>Klar sesini Mac’inde işler. Hiçbir şey bize ya da başkasına gönderilmez.</p>
-    <p class="updated">Yürürlük tarihi: 17 Kasım 2026</p>
+    <p class="updated">Yürürlük tarihi: 19 Kasım 2026</p>
   </header>
 
   <div class="card">
@@ -56,12 +56,12 @@
     <p>Deneme odasında ayarları karşılaştırmak için sesinden kısa bir örnek kaydedebilirsin. Örnek yalnızca bellekte tutulur; yeni bir örnek kaydettiğinde veya Klar’dan çıktığında silinir. Klar yalnızca <em>Önce ve sonrayı kaydet</em>’i seçersen iki WAV dosyasını seçtiğin klasöre yazar. Bu dosyalar senindir; Klar onları okumaz veya bir yere göndermez. Klar’dan kaydettiğin görseller için de aynısı geçerlidir: yalnızca seçtiğin yere gider.</p>
 
     <h3>İçe aktardığın dosyalar</h3>
-    <p>Özel bir gürültü azaltma modeli içe aktarırsan Klar, daha sonra kullanabilmek için o dosyayı Mac’inde <code>~/Library/Application Support/Klar</code> klasörüne kopyalar.</p>
+    <p>Özel bir gürültü azaltma modeli içe aktarırsan Klar, daha sonra kullanabilmek için o dosyayı Mac’inde kendi sandbox klasörüne (<code>~/Library/Containers/com.klar.voice</code>) kopyalar.</p>
   </div>
 
   <h2>3. Mac’inde saklanan bilgiler</h2>
   <div class="card">
-    <p>Seçimlerini hatırlamak için Klar şunları Mac’indeki tercihlerinde (<code>com.klar.voice</code>) yerel olarak saklar:</p>
+    <p>Seçimlerini hatırlamak için Klar şunları Mac’indeki kendi sandbox klasöründe (<code>~/Library/Containers/com.klar.voice</code>), tercihlerinde yerel olarak saklar:</p>
     <ul>
       <li>Efekt ayarları, yerleşik ve kaydedilmiş hazır ayarlar, uygulamaya göre ayar kuralları.</li>
       <li>Seçili giriş ve çıkış aygıtları, klavye kısayolları, arayüz dili ve benzeri seçenekler.</li>
@@ -106,9 +106,8 @@
   <h2>7. Saklama ve silme</h2>
   <div class="card">
     <p>Ses asla saklanmaz. Ayarlar sen silene kadar Mac’inde kalır. Klar’ın sakladığı her şeyi silmek için Klar’dan çık ve Terminal’de çalıştır:</p>
-    <p><code>defaults delete com.klar.voice</code></p>
-    <p><code>rm -rf ~/Library/Application\ Support/Klar</code></p>
-    <p>Uygulamayı ve bu dosyaları silmek tüm Klar verilerini kaldırır. Hakkında hiçbir veri tutmadığımız için bizim tarafımızda dışa aktarılacak veya silinecek bir şey yoktur; yine de her türlü talebinle bize ulaşabilirsin. Bize e-posta gönderirsen mesajını ve adresini yalnızca yanıt vermek için kullanır, aksini istemediğin sürece konu çözülünce yazışmayı sileriz.</p>
+    <p><code>rm -rf ~/Library/Containers/com.klar.voice</code></p>
+    <p>macOS, Terminal’in diğer uygulamaların verilerine erişip erişemeyeceğini sorabilir; bu komut için izin ver. Uygulamayı ve bu klasörü silmek tüm Klar verilerini kaldırır. Hakkında hiçbir veri tutmadığımız için bizim tarafımızda dışa aktarılacak veya silinecek bir şey yoktur; yine de her türlü talebinle bize ulaşabilirsin. Bize e-posta gönderirsen mesajını ve adresini yalnızca yanıt vermek için kullanır, aksini istemediğin sürece konu çözülünce yazışmayı sileriz.</p>
   </div>
 
   <h2>8. Çocuklar</h2>
@@ -123,7 +122,7 @@
 
   <h2>10. Güvenlik</h2>
   <div class="card">
-    <p>Klar Apple tarafından imzalanır ve noter onayından (notarization) geçer, güçlendirilmiş çalışma zamanıyla (hardened runtime) çalışır. Ses cihazından hiç çıkmadığı için korunacak bir aktarım veya sunucu depolaması yoktur.</p>
+    <p>Klar kod imzalıdır ve macOS App Sandbox içinde çalışır; bu da onu mikrofonla, izin verdiğin sistem sesiyle ve seçtiğin dosyalarla sınırlar. Ses cihazından hiç çıkmadığı için korunacak bir aktarım veya sunucu depolaması yoktur.</p>
   </div>
 
   <h2>11. Bu politikadaki değişiklikler</h2>
